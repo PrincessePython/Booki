@@ -77,7 +77,7 @@ header .nav-links a:hover {
 
 .main-location input {
 
-    border-style: 1px;
+    border-style: solid;
     height: 39px;
     width: 250px;
     font-weight: 700;
@@ -125,7 +125,7 @@ header .nav-links a:hover {
 /*********************** Header bottom **********************************/
 .filters {
   display: flex;
-  direction: row;
+  flex-direction: row;
   align-content: stretch;
   gap: 30px;
   margin-top: 25px;
@@ -451,6 +451,13 @@ footer {
     {
         width: 100%;
     }
+    .filters {
+      width: 100%;
+      justify-content: space-around;
+    }
+    .items {
+      justify-content: space-evenly;
+    }
     .items-3
     {
       flex-wrap: wrap;
@@ -463,13 +470,20 @@ footer {
     {
       width: 100%;
     }
+    .hebergements h3 {
+      margin-left: 55px;
+      /* text-align: center; */
+    }
+    .afficher-plus {
+      margin-left: 50px;
+    }
     .populaires
     {
       width: 100%;
     }
     .section-1
     {
-      gap: 20x;
+      gap: 20px;
     }
     .card-2
     {
@@ -522,7 +536,7 @@ footer {
     }
     .section-1
     {
-      gap: 20x;
+      gap: 20px;
     }
     .card-2
     {
